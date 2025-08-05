@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cars</title>
+  <link rel="stylesheet" href="../style.css">
+  <script src="../javascript.js"></script>
+</head>
+<body>
+  <div class="header">
+    <h1>Image Gallery</h1>
+    <div class="menu-list">
+      <a class="cat" onclick="scrollHome()" href="../index.html">Home</a>
+      <a onclick="showCat()" class="cat">Categories</a>
+      <a class="cat" onclick="scrollAbt()">About</a>
+      <a class="cat" href="../index.html">Contact</a>
+    </div>
+</div>
+
+<div class="cat-card">
+  <ul>
+    <li><a>Cars</a></li>
+    <li><a href="./food.html">Food</a></li>
+    <li><a href="./travel.html">Travel</a></li>
+    <li><a href="./nature.html">Nature</a></li>
+    <li><a href="./architecture.html">Architecture</a></li>
+    <li><a href="./animals.html">Animals</a></li>
+    <li><a href="./events.html">Events</a></li>
+  </ul>
+
+</div>
+
+
+<div class="inside-content">
+  <h2>Explore Stunning Photography</h2>
+      <select name="All" id="list" onchange="location = this.value;">
+        
+        <option>Cars</option>
+        <option value="../index.html">All</option>
+        <option value="./food.html">Food</option>
+        <option value="./travel.html">Travel</option>
+        <option value="./nature.html">Nature</option>
+        <option value="./architecture.html">Architecture</option>
+        <option value="./animals.html">Animals</option>
+        <option value="./events.html">Events</option>
+      </select>
+    <div class="all-images">
+    <img class="all-images-img" src="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg" onclick="lightBox(this)" width="350px">
+    <img class="all-images-img" src="https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg" onclick="lightBox(this)" width="350px">
+    <img class="all-images-img" src="https://images.pexels.com/photos/919073/pexels-photo-919073.jpeg" onclick="lightBox(this)" width="350px">
+    <img class="all-images-img" src="https://images.pexels.com/photos/707046/pexels-photo-707046.jpeg"  onclick="lightBox(this)" width="350px">
+    <img class="all-images-img" src="https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg" onclick="lightBox(this)" width="350px">
+    <img class="all-images-img" src="https://images.pexels.com/photos/627678/pexels-photo-627678.jpeg"  onclick="lightBox(this)" width="350px">
+    <img class="all-images-img" src="https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg" onclick="lightBox(this)"  width="350px">
+    <img class="all-images-img" src="https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg" onclick="lightBox(this)" width="350px">
+    <img class="all-images-img" src="https://images.pexels.com/photos/712618/pexels-photo-712618.jpeg" onclick="lightBox(this)" width="350px">
+    <img class="all-images-img" src="https://images.pexels.com/photos/100656/pexels-photo-100656.jpeg" onclick="lightBox(this)" width="350px">
+    <img class="all-images-img" src="https://images.pexels.com/photos/119435/pexels-photo-119435.jpeg" onclick="lightBox(this)" width="350px">
+  </div>
+</div>
+
+<div class="container">
+  <img src="" id="show">
+  <button style="background-color: transparent; border: none;" onclick="goway()"><img src="../icons/wrong-icon.png" id="close"></button>
+</div>
+
+
+</body>
+</html>

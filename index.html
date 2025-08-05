@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="icon" href="icons/icon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="javascript.js"> </script>
+</head>
+<body>
+<div class="header">
+    <h1>Image Gallery</h1>
+    <div class="menu-list">
+      <a class="cat" onclick="scrollHome()">Home</a>
+      <a onclick="showCat()" class="cat">Categories</a>
+      <a class="cat" onclick="scrollAbt()">About</a>
+      <a class="cat" onclick="scrollLast()">Contact</a>
+    </div>
+</div>
+
+<div class="cat-card">
+  <ul>
+    <li><a href="sites/cars.html">Cars</a></li>
+    <li><a href="sites/food.html">Food</a></li>
+    <li><a href="sites/travel.html">Travel</a></li>
+    <li><a href="sites/nature.html">Nature</a></li>
+    <li><a href="sites/architecture.html">Architecture</a></li>
+    <li><a href="sites/animals.html">Animals</a></li>
+    <li><a href="sites/events.html">Events</a></li>
+  </ul>
+
+</div>
+
+<div class="inside-content">
+  <h2>Explore Stunning Photography</h2>
+      <select name="All" id="list" onchange="location = this.value;">
+        <option>All</option>
+        <option value="sites/cars.html">Cars</option>
+        <option value="sites/food.html">Food</option>
+        <option value="sites/travel.html">Travel</option>
+        <option value="sites/nature.html">Nature</option>
+        <option value="sites/architecture.html">Architecture</option>
+        <option value="sites/animals.html">Animals</option>
+        <option value="sites/events.html">Events</option>
+      </select>
+    <div class="all-images">
+    <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg" onclick="lightBox(this)"  width="350px">
+    <img onclick="lightBox(this)" src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg" width="350px">
+    <img onclick="lightBox(this)" src="https://images.pexels.com/photos/1133957/pexels-photo-1133957.jpeg" width="350px">
+    <img onclick="lightBox(this)" src="https://images.pexels.com/photos/157811/pexels-photo-157811.jpeg" width="350px">
+    <img onclick="lightBox(this)" src="https://images.pexels.com/photos/45170/kittens-cat-cat-puppy-rush-45170.jpeg" width="350px">
+    <img onclick="lightBox(this)" src="https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg" width="350px">
+    <img onclick="lightBox(this)" src="https://images.pexels.com/photos/1008155/pexels-photo-1008155.jpeg" width="350px">
+  </div>
+</div>
+
+<div class="container">
+
+    <img src="" id="show">
+    <button style="background-color: transparent; border: none;" onclick="goway()"><img src="icons/wrong-icon.png" id="close"></button>
+  
+
+</div>
+
+<div class="about">
+  <h2>About</h2>
+  <p>Welcome to Image Gallery, a simple and visually engaging image gallery site built to showcase a collection of stunning visuals in an organized and user-friendly layout. This prject is developed using HTML, CSS and javascript, focusing on responsive design, interactive user experience, and clean aesthetics. </p>
+  <p> The Gallery is categorized for easy browsing and users can view and high-quality images through a lightbox effect, making the viewing experience smooth and immersive. Whether you're exploring the gallery for design inspiration or simply enjoying beautiful visuals, this site provides a seamless platform for image exploration.</p>
+</div>
+
+<div class="last">
+  <h2 >Contact</h2>
+  <h3 style="display: inline; margin-right: 5px;">Get in Touch:</h3>
+  <p style="display: inline;"><img src="icons/phone-icon.png" width="15px" > +91 6385412476</p>
+  <p>We'd love to hear from you! Whether you have questions, feedback or suggestions, feel free to reach out. Fill out the form below or connect with us via social media.</p>
+<br>
+
+   <center>
+    <table>
+      <form action="" method="post">
+        <tr>
+          <td><label for="">Name:</label></td>
+          <td><input type="text" style="border-radius: 5px; background-color: darkgray;"></td>
+        </tr>
+        <tr>
+          <td><label for="">Mail Id:</label></td>
+          <td><input type="email" style="border-radius: 5px; background-color: darkgray;"></td>
+        </tr>
+        <tr>
+          <td><label for="">Message:</label></td>
+          <td><textarea style="border-radius: 5px; background-color: darkgray;"></textarea></td>
+        </tr>
+        <tr>
+          <td><button type="submit" style="border-radius: 5px; padding: 6px; background-color: cadetblue;" onclick="sub(event)">Submit</button></td>
+        </tr>
+      </form>
+    </table>
+    </center>
+
+<br><br>
+  <p>
+    <img src="icons/images.png" width="15px">Mail Id: gowthamvenkat306@gmail.com <br><br>
+    <img src="icons/loc-icon.png" width="15px">Address: Coimbatore, TamilNadu India. <br><br>
+   <tr> <td><img src="icons/link-icon.png" width="20px"></td><td>Linkedin: <a href="https://www.linkedin.com/in/gowtham8-v" style="text-decoration: none; color: lightblue;">Gowtham</a></td></tr>
+</p>
+</div>
+
+
+
+</body>
+</html>

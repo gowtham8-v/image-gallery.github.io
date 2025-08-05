@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nature</title>
+  <link rel="stylesheet" href="../style.css">
+  <script src="../javascript.js"></script>
+</head>
+<body>
+  <div class="header">
+    <h1>Image Gallery</h1>
+    <div class="menu-list">
+      <a class="cat" onclick="scrollHome()" href="../index.html">Home</a>
+      <a onclick="showCat()" class="cat">Categories</a>
+      <a class="cat" onclick="scrollAbt()">About</a>
+      <a class="cat" href="../index.html">Contact</a>
+    </div>
+</div>
+
+<div class="cat-card">
+  <ul>
+    <li><a> Nature</a></li>
+    <li><a href="./food.html">Food</a></li>
+    <li><a href="./travel.html">Travel</a></li>
+    <li><a href="./cars.html">Cars</a></li>
+    <li><a href="./architecture.html">Architecture</a></li>
+    <li><a href="./animals.html">Animals</a></li>
+    <li><a href="./events.html">Events</a></li>
+  </ul>
+
+</div>
+
+
+<div class="inside-content">
+  <h2>Explore Stunning Photography</h2>
+      <select name="All" id="list" onchange="location = this.value;">
+        
+        <option value="">Nature</option>
+        <option value="../index.html">All</option>
+        <option value="./food.html">Food</option>
+        <option value="./travel.html">Travel</option>
+        <option value="./cars.html">Cars</option>
+        <option value="./architecture.html">Architecture</option>
+        <option value="./animals.html">Animals</option>
+        <option value="./events.html">Events</option>
+      </select>
+    <div class="all-images">
+    <img class="all-images-img" src="https://images.unsplash.com/photo-1503919483171-9ffc1debc390?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3ByaW5nfGVufDB8MHwwfHx8MA%3D%3D" onclick="lightBox(this)" width="350px">
+    <img class="all-images-img" src="https://plus.unsplash.com/premium_photo-1674917070243-905c3bbf1576?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c3ByaW5nfGVufDB8MHwwfHx8MA%3D%3D" onclick="lightBox(this)" width="350px">
+    <img class="all-images-img" src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c3ByaW5nfGVufDB8MHwwfHx8MA%3D%3D" onclick="lightBox(this)" width="350px">
+    <img class="all-images-img" src="https://images.unsplash.com/photo-1560258018-c7db7645254e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c3ByaW5nfGVufDB8MHwwfHx8MA%3D%3D"  onclick="lightBox(this)" width="350px">
+    <img class="all-images-img" src="https://plus.unsplash.com/premium_photo-1676400614009-3b230ef8be6d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c3ByaW5nfGVufDB8MHwwfHx8MA%3D%3D" onclick="lightBox(this)" width="350px">
+    <img class="all-images-img" src="https://plus.unsplash.com/premium_photo-1690031000842-1ac0508f18b7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHNwcmluZ3xlbnwwfDB8MHx8fDA%3D"  onclick="lightBox(this)" width="350px">
+    <img class="all-images-img" src="https://images.unsplash.com/photo-1458941055256-4c1ba58abbc5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHNwcmluZ3xlbnwwfDB8MHx8fDA%3D" onclick="lightBox(this)"  width="350px">
+    <img class="all-images-img" src="https://images.unsplash.com/photo-1683009427500-71296178737f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxzZWFyY2h8MXx8bmF0dXJlfGVufDB8MHwwfHx8MA%3D%3D" onclick="lightBox(this)" width="350px">
+    <img class="all-images-img" src="https://plus.unsplash.com/premium_photo-1719943510748-4b4354fbcf56?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bmF0dXJlfGVufDB8MHwwfHx8MA%3D%3D" onclick="lightBox(this)" width="350px">
+    <img class="all-images-img" src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG5hdHVyZXxlbnwwfDB8MHx8fDA%3D" onclick="lightBox(this)" width="350px">
+    <img class="all-images-img" src="https://images.unsplash.com/photo-1421789665209-c9b2a435e3dc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bmF0dXJlfGVufDB8MHwwfHx8MA%3D%3D" onclick="lightBox(this)" width="350px">
+    <img class="all-images-img" src="https://images.unsplash.com/photo-1505820013142-f86a3439c5b2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fG5hdHVyZXxlbnwwfDB8MHx8fDA%3D" onclick="lightBox(this)" width="350px">
+  </div>
+</div>
+
+<div class="container">
+  <img src="" id="show">
+  <button style="background-color: transparent; border: none;" onclick="goway()"><img src="../icons/wrong-icon.png" id="close"></button>
+</div>
+
+
+</body>
+</html>

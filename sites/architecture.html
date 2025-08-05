@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Architecture</title>
+  <link rel="stylesheet" href="../style.css">
+  <script src="../javascript.js"></script>
+</head>
+<body>
+  <div class="header">
+    <h1>Image Gallery</h1>
+    <div class="menu-list">
+      <a class="cat" onclick="scrollHome()" href="../index.html">Home</a>
+      <a onclick="showCat()" class="cat">Categories</a>
+      <a class="cat" onclick="scrollAbt()">About</a>
+      <a class="cat" href="../index.html">Contact</a>
+    </div>
+</div>
+
+<div class="cat-card">
+  <ul>
+    <li><a href="../sites/cars.html">Cars</a></li>
+    <li><a href="../sites/food.html">Food</a></li>
+    <li><a href="../sites/travel.html">Travel</a></li>
+    <li><a href="../sites/nature.html">Nature</a></li>
+    <li><a>Architecture</a></li>
+    <li><a href="../sites/animals.html">Animals</a></li>
+    <li><a href="../sites/events.html">Events</a></li>
+  </ul>
+
+</div>
+
+
+<div class="inside-content">
+  <h2>Explore Stunning Photography</h2>
+      <select name="All" id="list" onchange="location = this.value;">
+        
+        <option>Architecture</option>
+        <option value="../index.html">All</option>
+        <option value="../sites/food.html">Food</option>
+        <option value="../sites/travel.html">Travel</option>
+        <option value="../sites/nature.html">Nature</option>
+        <option value="../sites/cars.html">cars</option>
+        <option value="../sites/animals.html">Animals</option>
+        <option value="../sites/events.html">Events</option>
+      </select>
+    <div class="all-images">
+    <img class="all-images-img" src="https://images.pexels.com/photos/157811/pexels-photo-157811.jpeg" onclick="lightBox(this)" width="350px">
+    <img class="all-images-img" src="https://images.pexels.com/photos/256150/pexels-photo-256150.jpeg" onclick="lightBox(this)" width="350px">
+    <img class="all-images-img" src="https://images.pexels.com/photos/135018/pexels-photo-135018.jpeg" onclick="lightBox(this)" width="350px">
+    <img class="all-images-img" src="https://images.pexels.com/photos/1309897/pexels-photo-1309897.jpeg"  onclick="lightBox(this)" width="350px">
+    <img class="all-images-img" src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg" onclick="lightBox(this)" width="350px">
+    <img class="all-images-img" src="https://images.pexels.com/photos/443383/pexels-photo-443383.jpeg"  onclick="lightBox(this)" width="350px">
+    <img class="all-images-img" src="https://images.pexels.com/photos/1492232/pexels-photo-1492232.jpeg"  onclick="lightBox(this)" width="350px">
+    <img class="all-images-img" src="https://images.pexels.com/photos/323772/pexels-photo-323772.jpeg"  onclick="lightBox(this)" width="350px">
+    <img class="all-images-img" src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg"  onclick="lightBox(this)" width="350px">
+  </div>
+</div>
+
+<div class="container">
+  <img src="" id="show">
+  <button style="background-color: transparent; border: none;" onclick="goway()"><img src="../icons/wrong-icon.png" id="close"></button>
+</div>
+
+
+</body>
+</html>
