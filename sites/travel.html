@@ -10,6 +10,7 @@
 <body>
   <div class="header">
     <h1>Image Gallery</h1>
+    <img src="https://img.icons8.com/ios11/512/FFFFFF/menu.png" alt="menu" class="menu-icon" onclick="side()">
     <div class="menu-list">
       <a class="cat" onclick="scrollHome()" href="../index.html">Home</a>
       <a onclick="showCat()" class="cat">Categories</a>
@@ -60,6 +61,15 @@
 <div class="container">
   <img src="" id="show">
   <button style="background-color: transparent; border: none;" onclick="goway()"><img src="../icons/wrong-icon.png" id="close"></button>
+</div>
+
+<div class="menu-side">
+  <ul>
+    <li><a class="cat" onclick="scrollHome()">Home</a></li>
+    <li><a onclick="showCat()" class="cat">Categories</a></li>
+    <li><a class="cat" onclick="scrollAbt()">About</a></li>
+    <li><a class="cat" onclick="scrollLast()">Contact</a></li>
+  </ul>
 </div>
 
 
