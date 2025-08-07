@@ -211,6 +211,7 @@ body{
 
   .header h1{
     font-size: 20px;
+    padding-top: 20px;
   }
   .menu-list a{
     font-size: 13px;
@@ -218,7 +219,7 @@ body{
     margin-top: 45px;
   }
   .header{
-    padding-bottom: 40px;
+    padding-bottom: 30px;
   }
 
   .about{
@@ -239,5 +240,6 @@ body{
   }
 
 }
+
 
 
